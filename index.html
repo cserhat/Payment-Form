@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+    <form class="payment" method="post" action="register.php">
+        <span id="title"><h1>Payment Forms</h1></span>
+        <span id="title"><h4>Required field are followed by *</h4></span>
+        <span id="title"><h1>Contact Information</h1></span>
+            <div class="select">
+                <span>Title</span>
+                <input type="checkbox" id="Ace" name="Ace" value="Ace">
+                <label for="Ace"> Ace</label><br>
+                <input type="checkbox" id="King" name="King" value="King">
+                <label for="King"> King</label><br>
+                <input type="checkbox" id="Queen" name="Queen" value="Queen">
+                <label for="Queen"> Queen</label>
+            </div>
+
+            <div class="contact">      
+                <div class="name">     
+                <label  for="Name">Name: *</label>
+                <input required="required" name="name" type="text" id="name" placeholder="Name">
+                </div> 
+                <label for="Name">Email: *</label>
+                <input required="required" name="email" type="text" id="email" placeholder="Email">
+
+                <label id="pass"for="Name">Password: *</label>
+                <input required="required" name="password" type="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="card_information">
+                <span><h1>Payment Information</h1></span>
+                <div class="card_type">
+                <label for="Card_Type">Card Type:</label>
+                <select name="card_type" id="card_type">
+                    <option name="visa" value="Visa">Visa</option>
+                    <option name="master" value="Master Card">Master Card</option>
+                </select>
+            </div>
+                <label for="card_number">Card Number: *</label>
+                <input required="required" type="text" name="card_number" id="card_number" placeholder="Card Number">
+
+                <label for="expiration_date">Expiration Date: *</label>
+                <input required="required" type="date" name="expiration_date" id="expiration_date" placeholder="Expiration Date">
+
+            </div>
+            <button type="submit">Validate the payment</button>
+    </form>
+</div>
+</body>
+</html>
